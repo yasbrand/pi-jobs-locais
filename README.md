@@ -33,10 +33,15 @@
 ### # 🌐 Acessando a Aplicação JobLocal
 
 ## 📥 Clonar o Repositório
-git clone https://github.com/yasbrand/pi-jobs-locais.git
-cd pi-jobs-locais
+```bash
+git clone https://github.com/seu-usuario/JobLocal.git && cd JobLocal
+```
+## Este comando irá:
+1. Baixar todo o código-fonte do repositório
+2. Entrar na pasta do projeto criada
+   
 
-🚀 ##Executar a Aplicação Front-end
+## 🚀 Executar a Aplicação Front-end
 
 **Identifique o `index.html`**:
 - Procure pelo ícone de navegador 🌐 ou o tipo "Documento HTML"
