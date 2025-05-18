@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "pi-jobs-locais",
+			"path": "../.."
+		},
+		{
+			"name": "Backend",
+			"path": "../../../Projeto-Integrador/Backend"
+		},
+		{
+			"name": "Frontend",
+			"path": "../../../Projeto-Integrador/Frontend"
+		}
+	],
+	"settings": {}
+}
