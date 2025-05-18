@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobLocal - Contratar Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>JobLocal</h1>
+                <p>Conectando talentos a oportunidades</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Meu Perfil</a></li>
+                    <li><a href="workers.html">Profissionais</a></li>
+                    <li><a href="messages.html">Mensagens</a></li>
+                    <li><a href="logout.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hire-page">
+        <div class="container">
+            <div class="hire-header">
+                <h2>Contratar Profissional</h2>
+                <p>Preencha os detalhes do serviço que você precisa</p>
+            </div>
+
+            <div class="hire-form-container">
+                <form id="hire-form" class="hire-form">
+                    <div class="form-group">
+                        <label for="service-title">Título do Serviço</label>
+                        <input type="text" id="service-title" name="service-title" placeholder="Ex: Reforma de banheiro" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service-category">Categoria do Serviço</label>
+                        <select id="service-category" name="service-category" required>
+                            <option value="">Selecione uma categoria</option>
+                            <option value="1">Diarista</option>
+                            <option value="2">Pedreiro</option>
+                            <option value="3">Eletricista</option>
+                            <option value="4">Encanador</option>
+                            <option value="5">Ajudante Geral</option>
+                            <option value="6">Pintor</option>
+                            <option value="7">Jardineiro</option>
+                            <option value="8">Montador de Móveis</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service-description">Descrição Detalhada</label>
+                        <textarea id="service-description" name="service-description" rows="5" placeholder="Descreva com detalhes o serviço que você precisa..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service-location">Localização</label>
+                        <input type="text" id="service-location" name="service-location" placeholder="Endereço onde o serviço será realizado" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service-date">Data Prevista</label>
+                        <input type="date" id="service-date" name="service-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service-budget">Orçamento Previsto (opcional)</label>
+                        <input type="number" id="service-budget" name="service-budget" placeholder="R$">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="worker-select">Selecionar Profissional Específico (opcional)</label>
+                        <select id="worker-select" name="worker-select">
+                            <option value="">Qualquer profissional disponível</option>
+                            <option value="1">João Carlos - Pedreiro (4.2 ★)</option>
+                            <option value="2">Maria Silva - Diarista (4.8 ★)</option>
+                            <option value="3">José Santos - Eletricista (4.5 ★)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-preference">Preferência de Contato</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="contact-preference" value="chat" checked> Chat do JobLocal
+                            </label>
+                            <label>
+                                <input type="radio" name="contact-preference" value="phone"> Ligação Telefônica
+                            </label>
+                            <label>
+                                <input type="radio" name="contact-preference" value="whatsapp"> WhatsApp
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Publicar Oportunidade</button>
+                        <button type="button" class="btn-secondary">Cancelar</button>
+                    </div>
+                </form>
+
+                <div class="hire-tips">
+                    <h3>Dicas para uma boa contratação</h3>
+                    <ul>
+                        <li>Seja claro e detalhado na descrição do serviço</li>
+                        <li>Informe corretamente a localização para encontrar profissionais próximos</li>
+                        <li>Estabeleça um orçamento realista para o serviço</li>
+                        <li>Verifique as avaliações dos profissionais antes de contratar</li>
+                        <li>Combine todos os detalhes antes do início do serviço</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h3>JobLocal</h3>
+                <p>Conectando talentos a oportunidades</p>
+            </div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <h4>Sobre</h4>
+                    <ul>
+                        <li><a href="#">Nossa missão</a></li>
+                        <li><a href="#">Time</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 JobLocal. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Validação do formulário de contratação
+        document.getElementById('hire-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Aqui você adicionaria a validação e o envio dos dados para o backend
+            alert('Oportunidade publicada com sucesso! Profissionais entrarão em contato em breve.');
+            // window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>

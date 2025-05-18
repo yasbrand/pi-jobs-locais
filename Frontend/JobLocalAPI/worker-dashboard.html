@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobLocal - Painel do Trabalhador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>JobLocal</h1>
+                <p>Conectando talentos a oportunidades</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Meu Perfil</a></li>
+                    <li><a href="jobs.html">Oportunidades</a></li>
+                    <li><a href="messages.html">Mensagens</a></li>
+                    <li><a href="logout.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="worker-dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <h2>Bem-vindo, João Carlos!</h2>
+                <p>Encontre novas oportunidades de trabalho na sua região</p>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="sidebar">
+                    <div class="profile-summary">
+                        <img src="images/profile-placeholder.jpg" alt="Foto de perfil" class="profile-image">
+                        <h3>João Carlos</h3>
+                        <p>Pedreiro e Ajudante Geral</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-value">4.2 (15 avaliações)</span>
+                        </div>
+                        <a href="profile.html" class="btn-edit-profile">Editar Perfil</a>
+                    </div>
+
+                    <div class="quick-stats">
+                        <div class="stat-card">
+                            <h4>Serviços Concluídos</h4>
+                            <p>24</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Avaliação Média</h4>
+                            <p>4.2</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Mensagens</h4>
+                            <p>3 novas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-content">
+                    <div class="job-search">
+                        <h3>Buscar Oportunidades</h3>
+                        <form class="search-form">
+                            <div class="form-group">
+                                <label for="job-category">Categoria</label>
+                                <select id="job-category" name="job-category">
+                                    <option value="">Todas as categorias</option>
+                                    <option value="1">Diarista</option>
+                                    <option value="2">Pedreiro</option>
+                                    <option value="3">Eletricista</option>
+                                    <option value="4">Encanador</option>
+                                    <option value="5">Ajudante Geral</option>
+                                    <option value="6">Pintor</option>
+                                    <option value="7">Jardineiro</option>
+                                    <option value="8">Montador de Móveis</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-location">Localização</label>
+                                <input type="text" id="job-location" name="job-location" placeholder="Digite sua cidade">
+                            </div>
+                            <button type="submit" class="btn-primary">Buscar Oportunidades</button>
+                        </form>
+                    </div>
+
+                    <div class="job-listings">
+                        <h3>Oportunidades Disponíveis</h3>
+                        
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h4>Reforma de Banheiro</h4>
+                                <p class="job-category">Pedreiro</p>
+                                <p class="job-description">Preciso de um pedreiro para reforma completa de banheiro, incluindo assentamento de piso e azulejo.</p>
+                                <p class="job-location">📍 São Paulo - SP</p>
+                                <p class="job-price">R$ 1.200,00</p>
+                                <p class="job-date">⏰ 15/10/2023</p>
+                            </div>
+                            <div class="job-actions">
+                                <button class="btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h4>Pintura Residencial</h4>
+                                <p class="job-category">Pintor</p>
+                                <p class="job-description">Pintura de apartamento de 80m², 2 quartos, sala e cozinha.</p>
+                                <p class="job-location">📍 São Paulo - SP</p>
+                                <p class="job-price">R$ 1.800,00</p>
+                                <p class="job-date">⏰ 18/10/2023</p>
+                            </div>
+                            <div class="job-actions">
+                                <button class="btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h4>Montagem de Móveis</h4>
+                                <p class="job-category">Montador de Móveis</p>
+                                <p class="job-description">Montagem de guarda-roupas, cama e escrivaninha em apartamento novo.</p>
+                                <p class="job-location">📍 São Paulo - SP</p>
+                                <p class="job-price">R$ 350,00</p>
+                                <p class="job-date">⏰ 20/10/2023</p>
+                            </div>
+                            <div class="job-actions">
+                                <button class="btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h3>JobLocal</h3>
+                <p>Conectando talentos a oportunidades</p>
+            </div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <h4>Sobre</h4>
+                    <ul>
+                        <li><a href="#">Nossa missão</a></li>
+                        <li><a href="#">Time</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 JobLocal. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

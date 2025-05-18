@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JobLocal - Cadastro</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <style>
+      /* Estilos específicos para a página de cadastro */
+      .register-hero {
+        padding: 40px 0;
+      }
+      
+      .register-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      }
+
+      form label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 500;
+      }
+
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      form textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+
+      form button[type="submit"] {
+        background-color: #2c7be5;
+        color: white;
+        border: none;
+        padding: 14px 0;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .error-message,
+      .success-message {
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        font-weight: 600;
+      }
+      .error-message {
+        background-color: #ffcccc;
+        color: #a00;
+      }
+      .success-message {
+        background-color: #ccffd9;
+        color: #060;
+      }
+
+      #worker-fields {
+        display: none;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>JobLocal</h1>
+        <p>Conectando talentos a oportunidades</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trabalhador.html">Sou Trabalhador</a></li>
+          <li><a href="contratante.html">Sou Contratante</a></li>
+          <li><a href="register.html" class="btn-trabalhador">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- BOTÕES NO TOPO DA PÁGINA -->
+    <div class="user-type-header">
+      <div class="container">
+        <div class="user-type-buttons">
+          <button id="worker-btn" class="active">Trabalhador</button>
+          <button id="employer-btn">Contratante</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="register-hero">
+    <div class="container register-container">
+      <h2>Cadastre-se no JobLocal</h2>
+
+      <form id="register-form" enctype="multipart/form-data" novalidate>
+        <input type="hidden" id="user-type" name="userType" value="worker" />
+
+        <label for="name">Nome completo</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="location">Localização</label>
+        <input type="text" id="location" name="location" placeholder="Cidade, Estado" required />
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required minlength="6" />
+
+        <label for="confirm-password">Confirmar senha</label>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="6" />
+
+        <!-- Campos específicos para trabalhador -->
+        <div id="worker-fields">
+          <label for="skills">Habilidades</label>
+          <input type="text" id="skills" name="skills" placeholder="Ex: Pintura, Jardinagem, Limpeza" />
+
+          <label for="description">Descrição</label>
+          <textarea id="description" name="description" placeholder="Fale sobre você e suas experiências"></textarea>
+
+          <label for="profile-image">Foto de perfil</label>
+          <input type="file" id="profile-image" name="profileImage" accept="image/*" />
+
+          <label for="document-image">Documento (RG ou CPF)</label>
+          <input type="file" id="document-image" name="documentImage" accept="image/*" />
+        </div>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <h3>JobLocal</h3>
+        <p>Conectando talentos a oportunidades</p>
+      </div>
+      <div class="footer-links">
+        <div class="links-column">
+          <h4>Sobre</h4>
+          <ul>
+            <li><a href="about.html">Nossa missão</a></li>
+            <li><a href="team.html">Time</a></li>
+            <li><a href="partners.html">Parceiros</a></li>
+          </ul>
+        </div>
+        <div class="links-column">
+          <h4>Ajuda</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contato</a></li>
+            <li><a href="terms.html">Termos de uso</a></li>
+          </ul>
+        </div>
+        <div class="links-column">
+          <h4>Redes Sociais</h4>
+          <ul>
+            <li><a href="https://facebook.com/joblocal" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com/joblocal" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/joblocal" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 JobLocal. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const workerBtn = document.getElementById('worker-btn');
+      const employerBtn = document.getElementById('employer-btn');
+      const workerFields = document.getElementById('worker-fields');
+      const userTypeField = document.getElementById('user-type');
+      const registerForm = document.getElementById('register-form');
+      const submitBtn = registerForm.querySelector('button[type="submit"]');
+
+      function toggleUserType(isWorker) {
+        workerBtn.classList.toggle('active', isWorker);
+        employerBtn.classList.toggle('active', !isWorker);
+        workerFields.style.display = isWorker ? 'block' : 'none';
+        userTypeField.value = isWorker ? 'worker' : 'employer';
+      }
+
+      workerBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        toggleUserType(true);
+      });
+
+      employerBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        toggleUserType(false);
+      });
+
+      registerForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Cadastrando...';
+
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+
+        if (password !== confirmPassword) {
+          showError('As senhas não coincidem');
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Cadastrar';
+          return;
+        }
+
+        const formData = new FormData();
+        formData.append('name', sanitizeInput(document.getElementById('name').value));
+        formData.append('email', sanitizeInput(document.getElementById('email').value));
+        formData.append('phone', sanitizeInput(document.getElementById('phone').value));
+        formData.append('password', password);
+        formData.append('userType', userTypeField.value);
+        formData.append('location', sanitizeInput(document.getElementById('location').value));
+
+        if (userTypeField.value === 'worker') {
+          formData.append('skills', sanitizeInput(document.getElementById('skills').value));
+          formData.append('description', sanitizeInput(document.getElementById('description').value));
+
+          const profileImage = document.getElementById('profile-image').files[0];
+          const documentImage = document.getElementById('document-image').files[0];
+
+          if (profileImage) formData.append('profileImage', profileImage);
+          if (documentImage) formData.append('documentImage', documentImage);
+        }
+
+        try {
+          const response = await fetch('http://localhost:5000/api/users/register', {
+            method: 'POST',
+            body: formData,
+          });
+
+          const data = await response.json();
+
+          if (!response.ok) {
+            throw new Error(data.message || 'Erro no cadastro');
+          }
+
+          showSuccess('Cadastro realizado com sucesso!');
+          setTimeout(() => {
+            window.location.href =
+              userTypeField.value === 'worker'
+                ? 'worker-dashboard.html'
+                : 'employer-dashboard.html';
+          }, 1500);
+        } catch (error) {
+          console.error('Erro no cadastro:', error);
+          showError(error.message || 'Erro ao conectar com o servidor');
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Cadastrar';
+        }
+      });
+
+      function sanitizeInput(input) {
+        return input.trim().replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      }
+
+      function showError(message) {
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'error-message';
+        errorDiv.textContent = message;
+
+        const existingError = registerForm.querySelector('.error-message');
+        if (existingError) existingError.remove();
+
+        registerForm.prepend(errorDiv);
+        setTimeout(() => errorDiv.remove(), 5000);
+      }
+
+      function showSuccess(message) {
+        const successDiv = document.createElement('div');
+        successDiv.className = 'success-message';
+        successDiv.textContent = message;
+
+        const existingMsg = registerForm.querySelector('.success-message');
+        if (existingMsg) existingMsg.remove();
+
+        registerForm.prepend(successDiv);
+        setTimeout(() => successDiv.remove(), 5000);
+      }
+
+      // Inicializa como trabalhador
+      toggleUserType(true);
+    });
+  </script>
+</body>
+</html>
