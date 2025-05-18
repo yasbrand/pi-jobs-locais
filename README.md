@@ -1,2 +1,2 @@
-# pi-jobs-locais
+# PROJETO INTEGRADOR: DESENVOLVIMENTO DE SISTEMAS ORIENTADO A DISPOSITIVOS MÓVEIS E BASEADOS NA WEB
 Projeto Integrador, entrega do site Jobs Locais
