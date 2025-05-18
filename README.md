@@ -34,7 +34,7 @@
 
 ## 📥 Clonar o Repositório
 ```bash
-git clone https://github.com/seu-usuario/JobLocal.git && cd JobLocal
+git clone https://github.com/seu-usuário/pi-jobs-locais.git && cd JobLocal
 ```
 ## Este comando irá:
 1. Baixar todo o código-fonte do repositório
@@ -47,7 +47,7 @@ git clone https://github.com/seu-usuario/JobLocal.git && cd JobLocal
 - Procure pelo ícone de navegador 🌐 ou o tipo "Documento HTML"
 - Nome completo: `index.html` (arquivo de entrada padrão)
 
-## 🖱️ Métodos de Abertura
+## 🖱️ Métodos de Abertura do arquivo `index.html` do projeto
 
 ### Método 1: Duplo Clique (Simples)
 1. Posicione o cursor sobre `index.html`
