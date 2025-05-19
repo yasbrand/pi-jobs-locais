@@ -13,7 +13,7 @@ namespace JobLocalAPI.Models
         public DbSet<ServiceCategory> ServiceCategories { get; set; }
         public DbSet<Job> Jobs { get; set; }
         public DbSet<Review> Reviews { get; set; }
-        public DbSet<Message> Mensages { get; set; }
+        public DbSet<Message> Messages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
