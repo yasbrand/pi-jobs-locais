@@ -26,7 +26,7 @@ namespace JobLocalAPI.Models
         [Required]
         public int EmployerId { get; set; }
 
-        public int? WorkerId { get; set; } // Null until assigned
+        public int WorkerId { get; set; } // Null until assigned
 
         [Required]
         public string Status { get; set; } // "posted", "assigned", "completed", "cancelled"
